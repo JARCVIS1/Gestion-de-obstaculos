@@ -1,0 +1,34 @@
+Inicio
+
+    Definir vueltas_totales como 3
+    Definir vuelta_actual como 0
+
+    Mientras vuelta_actual < vueltas_totales
+        Iniciar vuelta
+
+        // Paso 1: Mover hacia adelante
+        Mover adelante hasta el borde de la alfombra
+        
+        // Paso 2: Girar a la derecha
+        Girar 90 grados a la derecha
+        
+        // Paso 3: Mover hacia adelante
+        Mover adelante hasta el siguiente borde de la alfombra
+        
+        // Paso 4: Girar a la derecha
+        Girar 90 grados a la derecha
+        
+        // Paso 5: Mover hacia adelante
+        Mover adelante hasta el siguiente borde de la alfombra
+        
+        // Paso 6: Girar a la derecha
+        Girar 90 grados a la derecha
+        
+        // Paso 7: Mover hacia adelante
+        Mover adelante hasta el punto de inicio
+
+        Incrementar vuelta_actual en 1
+
+    Fin mientras
+
+Fin
