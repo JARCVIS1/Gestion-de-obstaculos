@@ -1,0 +1,13 @@
+Pseudocódigo
+Inicio
+1. Inicializar la posición del vehículo
+2. Detectar el color del pilar (rojo o verde)
+3. Determinar la ubicación del pilar (izquierdo o derecho)
+4. Si el pilar rojo está a la derecha:
+     a. Girar a la derecha
+     b. Avanzar
+5. Si el pilar verde está a la izquierda:
+     a. Girar a la izquierda
+     b. Avanzar
+6. Repita los pasos 2 a 5 hasta que se hayan eliminado todos los pilares
+Fin
