@@ -1,34 +1,38 @@
-Inicio
-
-    Definir vueltas_totales como 3
-    Definir vuelta_actual como 0
-
-    Mientras vuelta_actual < vueltas_totales
-        Iniciar vuelta
-
-        // Paso 1: Mover hacia adelante
-        Mover adelante hasta el borde de la alfombra
-        
-        // Paso 2: Girar a la derecha
-        Girar 90 grados a la derecha
-        
-        // Paso 3: Mover hacia adelante
-        Mover adelante hasta el siguiente borde de la alfombra
-        
-        // Paso 4: Girar a la derecha
-        Girar 90 grados a la derecha
-        
-        // Paso 5: Mover hacia adelante
-        Mover adelante hasta el siguiente borde de la alfombra
-        
-        // Paso 6: Girar a la derecha
-        Girar 90 grados a la derecha
-        
-        // Paso 7: Mover hacia adelante
-        Mover adelante hasta el punto de inicio
-
-        Incrementar vuelta_actual en 1
-
-    Fin mientras
-
-Fin
+Pseudocódigo
+1. Inicio
+2. Inicializar la posición del vehículo
+3. Calcular la distancia en cm usando la fórmula: `distancia = duracion / 2 / 29.1`
+4. Mostrar la distancia en el monitor serial
+5. Si la distancia es menor a 106 cm
+   5.1. Detener motor1
+   5.2. Conectar el servo al pin 10
+   5.3. Establecer velocidad del motor1 en 250
+   5.4. Mover el servo a la posición de 90 grados
+   5.5. Iniciar motor1 hacia adelante
+   5.6. Esperar 400 milisegundos
+   5.7. Mover el servo a la posición de 100 grados
+   5.8. Establecer velocidad del motor1 en 255
+   5.9. Mantener motor1 hacia adelante
+   5.10. Esperar 2400 milisegundos
+   5.11. Mantener el servo en 100 grados
+   5.12. Establecer velocidad máxima del motor1 (255)
+   5.13. Iniciar motor1 hacia adelante
+   5.14. Esperar 9000 milisegundos para completar las 3 vueltas
+   5.12. Detener motor1 y liberar el motor1
+6. Si la distancia es mayor o igual a 106 cm:
+    6.1. Detener motor1
+    6.2. Conectar el servo al pin 10
+    6.3. Establecer velocidad del motor1 en 250
+    6.4. Mover el servo a la posición de 90 grados
+    6.5. Iniciar motor1 hacia adelante
+    6.6. Esperar 1200 milisegundos
+    6.7. Mover el servo a la posición de 100 grados
+    6.8. Establecer velocidad del motor1 en 255
+    6.9. Mantener motor1 hacia adelante
+    6.10. Esperar 2500 milisegundos
+    6.11. Mantener el servo en 100 grados
+    6.11. Establecer velocidad del motor1 en 250
+    6.11. Iniciar motor1 hacia adelante
+    6.11. Esperar 14000 milisegundos para completar las 3 vueltas
+    6.12. Detener motor1 y liberar motor1
+7. Fin
