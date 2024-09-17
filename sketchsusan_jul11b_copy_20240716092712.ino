@@ -10,13 +10,10 @@ void setup()
   myservo.write(90);//Mueve el servo a la posición de 90 grados (inicial)
   motor1.run(FORWARD);// Configura el motor para que gire hacia adelante
   delay(1700);// Espera 1.7 segundos
-
   myservo.write(100);//Mueve el servo a la posición de 100 grados
   motor1.setSpeed(250); // Ajusta nuevamente la velocidad del motor a 250
   motor1.run(FORWARD);// Configura el motor para que gire hacia adelante
   delay(2500); // Espera 2.5 segundos
-
- // terminar vuelta
  myservo.write(100);// Mantiene el servo en la posición de 100 grados
   motor1.setSpeed(255);// Establece la velocidad máxima del motor
   motor1.run(FORWARD);// Configura el motor para que gire hacia adelante
